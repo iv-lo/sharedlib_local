@@ -3,8 +3,8 @@ package com.arrival.ucs
 import groovy.json.JsonSlurper
 
 
-class BundleHolder extends BundleHolderClazz {
-    // String initBundles = """
+class BundleHolder {
+    // String initBundles = """ extends BundleHolderClazz
     //         {
     //     "Van_1": [
     //         {"//vehicle1": "0.0.9.0"},
