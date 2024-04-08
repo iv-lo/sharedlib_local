@@ -4,6 +4,7 @@ import groovy.json.JsonSlurper
 
 
 class BundleHolder {
+    String test = 'ddd'
     // String initBundles = """ extends BundleHolderClazz
     //         {
     //     "Van_1": [
@@ -32,8 +33,13 @@ class BundleHolder {
     //     }
     // """
 
-    BundleHolder(def pipeline) {
-        super(pipeline)
+    // BundleHolder(def pipeline) {
+    //     super(pipeline)
+    //     // this.initializeFromString(this.initBundles)
+
+    // }
+    BundleHolder() {
+        this.test = 'aaa'
         // this.initializeFromString(this.initBundles)
 
     }
