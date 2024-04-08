@@ -4,11 +4,9 @@ package com.arrival.ucs
 
 
 class BundleHolder extends BundleHolderClazz {
-    String name
 
     BundleHolder(def pipeline, String name) {
         super(pipeline)
-        this.name = name
     }
     // String initBundles = """ extends BundleHolderClazz
     //         {
@@ -44,6 +42,6 @@ class BundleHolder extends BundleHolderClazz {
 
     // }
     String getWelcomeMessage() {
-        return "Welcome to Jenkins Shared Libraries, ${name}!"
+        return "Welcome to Jenkins Shared Libraries!"
     }
 }
