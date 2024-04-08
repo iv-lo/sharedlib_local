@@ -33,7 +33,13 @@ class BundleHolder extends BundleHolderClazz {
             ]
             }
         """
-        this.initializeFromString(this.initBundles)
+        // this.initializeFromString(this.initBundles)
+    }
+
+    static BundleHolder createInitializedInstance() {
+        BundleHolder holder = new BundleHolder()
+        holder.initializeFromString(holder.initBundles)
+        return holder
     }
     
 
