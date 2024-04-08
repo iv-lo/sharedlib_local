@@ -33,7 +33,7 @@ class BundleHolder extends BundleHolderClazz {
             ]
             }
         """
-        // this.initializeFromString(this.initBundles)
+        this.initializeFromString()
     }
     
 
