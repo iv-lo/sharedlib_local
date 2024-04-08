@@ -1,7 +1,5 @@
 package com.arrival.ucs
 
-// import groovy.json.JsonSlurper
-
 
 class BundleHolder extends BundleHolderClazz {
     BundleHolder(def pipeline) {
@@ -33,22 +31,11 @@ class BundleHolder extends BundleHolderClazz {
             ]
             }
         """
-        // this.initializeFromString(this.initBundles)
     }
 
     static BundleHolder createInitializedInstance() {
         BundleHolder holder = new BundleHolder()
         holder.initializeFromString(holder.initBundles)
         return holder
-    }
-    
-
-    // BundleHolder(def pipeline) {
-    //     super(pipeline)
-    //     // this.initializeFromString(this.initBundles)
-
-    // }
-    String getWelcomeMessage() {
-        return "Welcome to Jenkins Shared Libraries!"
     }
 }
