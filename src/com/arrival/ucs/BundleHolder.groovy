@@ -1,6 +1,6 @@
 package com.arrival.ucs
 
-import groovy.json.JsonSlurper
+// import groovy.json.JsonSlurper
 
 
 class BundleHolder {
@@ -38,9 +38,7 @@ class BundleHolder {
     //     // this.initializeFromString(this.initBundles)
 
     // }
-    BundleHolder() {
-        this.test = 'aaa'
-        // this.initializeFromString(this.initBundles)
-
+    static String getWelcomeMessage() {
+        return "Welcome to Jenkins Shared Libraries!"
     }
 }
