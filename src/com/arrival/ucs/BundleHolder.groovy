@@ -42,7 +42,8 @@ class BundleHolder {
     //     // this.initializeFromString(this.initBundles)
 
     // }
-    String getWelcomeMessage() {
+    String getWelcomeMessage(def pipeline) {
+        super(pipeline)
         return "Welcome to Jenkins Shared Libraries, ${name}!"
     }
 }
