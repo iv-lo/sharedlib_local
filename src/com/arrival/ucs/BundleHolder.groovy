@@ -4,7 +4,11 @@ package com.arrival.ucs
 
 
 class BundleHolder {
-    String test = 'ddd'
+    private String name
+
+    BundleHolder(String name) {
+        this.name = name
+    }
     // String initBundles = """ extends BundleHolderClazz
     //         {
     //     "Van_1": [
@@ -39,6 +43,6 @@ class BundleHolder {
 
     // }
     static String getWelcomeMessage() {
-        return "Welcome to Jenkins Shared Libraries!"
+        return "Welcome to Jenkins Shared Libraries, ${name}!"
     }
 }
