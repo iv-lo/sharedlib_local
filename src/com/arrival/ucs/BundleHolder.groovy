@@ -3,7 +3,7 @@ package com.arrival.ucs
 // import groovy.json.JsonSlurper
 
 
-class BundleHolder {
+class BundleHolder extends BundleHolderClazz {
     String name
 
     BundleHolder(def pipeline, String name) {
