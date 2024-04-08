@@ -5,7 +5,7 @@ package com.arrival.ucs
 
 class BundleHolder extends BundleHolderClazz {
 
-    BundleHolder(def pipeline, String name) {
+    BundleHolder(def pipeline) {
         super(pipeline)
     }
     // String initBundles = """ extends BundleHolderClazz
