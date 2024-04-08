@@ -43,6 +43,6 @@ class BundleHolder {
 
     // }
     static String getWelcomeMessage() {
-        return "Welcome to Jenkins Shared Libraries, ${name}!"
+        return "Welcome to Jenkins Shared Libraries, ${this.name}!"
     }
 }
