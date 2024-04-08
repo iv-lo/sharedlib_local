@@ -4,7 +4,7 @@ package com.arrival.ucs
 
 
 class BundleHolder {
-    private String name
+    String name
 
     BundleHolder(String name) {
         this.name = name
@@ -42,7 +42,7 @@ class BundleHolder {
     //     // this.initializeFromString(this.initBundles)
 
     // }
-    static String getWelcomeMessage() {
-        return "Welcome to Jenkins Shared Libraries, ${this.name}!"
+    String getWelcomeMessage() {
+        return "Welcome to Jenkins Shared Libraries, ${name}!"
     }
 }
