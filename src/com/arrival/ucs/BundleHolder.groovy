@@ -6,27 +6,27 @@ class BundleHolder extends BundleHolderClazz {
         super(pipeline)
         _bundles = [
             "Van_1": [
-                new ProjectClazz(pipeline, "//vehicle1", "0.0.9.0", "now"),
-                new ProjectClazz(pipeline, "//vehicle1", "0.0.9.0", "now")
+                new Project(pipeline, "//vehicle1", "0.0.9.0", "now"),
+                new Project(pipeline, "//vehicle1", "0.0.9.0", "now")
             ],
             "Van_2": [
-                new ProjectClazz(pipeline, "//vehicle1", "0.2.0.0", "now")
+                new Project(pipeline, "//vehicle1", "0.2.0.0", "now")
             ],
             "Van_3": [
-                new ProjectClazz(pipeline, "//vehicle1", "0.13.0.2", "now"),
-                new ProjectClazz(pipeline, "//vehicle2", "0.5.0.1", "now"),
-                new ProjectClazz(pipeline, "//vehicle3", "0.6.0.1", "now")
+                new Project(pipeline, "//vehicle1", "0.13.0.2", "now"),
+                new Project(pipeline, "//vehicle2", "0.5.0.1", "now"),
+                new Project(pipeline, "//vehicle3", "0.6.0.1", "now")
             ],
             "Van_4": [
-                new ProjectClazz(pipeline, "//vehicle1", "head", "now"),
-                new ProjectClazz(pipeline, "//vehicle2", "head", "now"),
-                new ProjectClazz(pipeline, "//vehicle3", "head", "now"),
-                new ProjectClazz(pipeline, "//vehicle4", "head", "now"),
-                new ProjectClazz(pipeline, "//vehicle5", "head", "now")
+                new Project(pipeline, "//vehicle1", "head", "now"),
+                new Project(pipeline, "//vehicle2", "head", "now"),
+                new Project(pipeline, "//vehicle3", "head", "now"),
+                new Project(pipeline, "//vehicle4", "head", "now"),
+                new Project(pipeline, "//vehicle5", "head", "now")
             ],
             "Van_5": [
-                new ProjectClazz(pipeline, "//vehicle1", "0.22.0.5", "now"),
-                new ProjectClazz(pipeline, "//vehicle2", "0.22.6.0", "now")
+                new Project(pipeline, "//vehicle1", "0.22.0.5", "now"),
+                new Project(pipeline, "//vehicle2", "0.22.6.0", "now")
             ]
         ]
     }
