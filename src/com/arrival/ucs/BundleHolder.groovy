@@ -4,85 +4,31 @@ package com.arrival.ucs
 class BundleHolder extends BundleHolderClazz {
     BundleHolder(def pipeline) {
         super(pipeline)
-        this.initBundles = """
-        {
+        _bundles = [
             "Van_1": [
-                {
-                    "Component": "//vehicle1",
-                    "Version": "0.0.9.0",
-                    "Commit": "now"
-                },
-                {
-                    "Component": "//vehicle1",
-                    "Version": "0.0.9.0",
-                    "Commit": "now"
-                }
+                new ProjectClazz(pipeline, "//vehicle1", "0.0.9.0", "now"),
+                new ProjectClazz(pipeline, "//vehicle1", "0.0.9.0", "now")
             ],
             "Van_2": [
-                {
-                    "Component": "//vehicle1",
-                    "Version": "0.2.0.0",
-                    "Commit": "now"
-                }
+                new ProjectClazz(pipeline, "//vehicle1", "0.2.0.0", "now")
             ],
             "Van_3": [
-                {
-                    "Component": "//vehicle1",
-                    "Version": "0.13.0.2",
-                    "Commit": "now"
-                },
-                {
-                    "Component": "//vehicle2",
-                    "Version": "0.5.0.1",
-                    "Commit": "now"
-                },
-                {
-                    "Component": "//vehicle3",
-                    "Version": "0.6.0.1",
-                    "Commit": "now"
-                }
+                new ProjectClazz(pipeline, "//vehicle1", "0.13.0.2", "now"),
+                new ProjectClazz(pipeline, "//vehicle2", "0.5.0.1", "now"),
+                new ProjectClazz(pipeline, "//vehicle3", "0.6.0.1", "now")
             ],
             "Van_4": [
-                {
-                    "Component": "//vehicle1",
-                    "Version": "head",
-                    "Commit": "now"
-                },
-                {
-                    "Component": "//vehicle2",
-                    "Version": "head",
-                    "Commit": "now"
-                },
-                {
-                    "Component": "//vehicle3",
-                    "Version": "head",
-                    "Commit": "now"
-                },
-                {
-                    "Component": "//vehicle4",
-                    "Version": "head",
-                    "Commit": "now"
-                },
-                {
-                    "Component": "//vehicle5",
-                    "Version": "head",
-                    "Commit": "now"
-                }
+                new ProjectClazz(pipeline, "//vehicle1", "head", "now"),
+                new ProjectClazz(pipeline, "//vehicle2", "head", "now"),
+                new ProjectClazz(pipeline, "//vehicle3", "head", "now"),
+                new ProjectClazz(pipeline, "//vehicle4", "head", "now"),
+                new ProjectClazz(pipeline, "//vehicle5", "head", "now")
             ],
             "Van_5": [
-                {
-                    "Component": "//vehicle1",
-                    "Version": "0.22.0.5",
-                    "Commit": "now"
-                },
-                {
-                    "Component": "//vehicle2",
-                    "Version": "0.22.6.0",
-                    "Commit": "now"
-                }
+                new ProjectClazz(pipeline, "//vehicle1", "0.22.0.5", "now"),
+                new ProjectClazz(pipeline, "//vehicle2", "0.22.6.0", "now")
             ]
-        }
-        """
+        ]
     }
 
     static BundleHolder createInitializedInstance() {
