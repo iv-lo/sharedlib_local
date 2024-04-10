@@ -29,6 +29,7 @@ class BundleHolder extends BundleHolderClazz {
                 new Project(pipeline, "//vehicle2", "0.22.6.0", "now")
             ]
         ]
+        this.defaultVehicle = 'Van_4'
     }
 
     static BundleHolder createInitializedInstance() {
