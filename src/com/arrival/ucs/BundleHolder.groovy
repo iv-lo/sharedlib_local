@@ -1,6 +1,5 @@
 package com.arrival.ucs
 
-
 class BundleHolder extends BundleHolderClazz {
     BundleHolder(def pipeline) {
         super(pipeline)
@@ -29,6 +28,6 @@ class BundleHolder extends BundleHolderClazz {
                 new Project(pipeline, "//vehicle52", "0.22.6.0", "now")
             ]
         ]
-        this.defaultVehicle = 'Van_4'
+        this._defaultVehicle = 'Van_4'
     }
 }
